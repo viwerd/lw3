@@ -15,11 +15,6 @@ int main()
     int factorial = num;
     while (n != num)
     {
-        if (numeric_limits<int>::max() / factorial < (num - n))
-        {
-            cout << "Не могу обработать такое болшое число." << endl;
-            return 0;
-        }
         factorial = factorial * (num - n);
         n++;
     }
